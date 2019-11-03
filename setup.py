@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 try:
     import pypandoc
-    long_description = pypandoc.convert('README.md', 'rst')
+    long_description = pypandoc.convert_file('README.md', 'rst')
 except (IOError, ImportError):
     long_description = open('README.md').read()
 
@@ -17,11 +17,11 @@ setup(
     name='rockstar',
     version=version,
     install_requires=requirements,
-    author='Avinash Sajjanshetty',
-    author_email='hi@avi.im',
+    author='compliment',
+    author_email='elbasuv@gmail.com',
     packages=find_packages(),
     include_package_data=True,
-    url='https://github.com/avinassh/rockstar/',
+    url='https://github.com/compliment/rockstar/',
     license='MIT',
     description='Makes you a Rockstar programmer in 2 minutes',
     long_description=long_description,
